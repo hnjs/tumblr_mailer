@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<p>Hey <%=firstName%></p>
+		<p>
+			How are you doing? I'm doing well. It's been like <%=numMonthsSinceContact%> months since we last talked. I'm learning to code full-time at Fullstack Academy and enjoying my time.
+		</p>
+		<p>
+			I've been blogging about my experiences at Fullstack on my blog. Check out my recent posts.
+		</p>
+
+		<ul>
+			<% posts.forEach(function(post) { %>
+			<li><a href='<%= post.url %>'><%= post.title || post.url %></a></li>
+			<% }); %>
+		</ul>
+				
+		<p>
+			Talk soon, <br>
+			Harish
+		</p>
+	</body>
+</html>
