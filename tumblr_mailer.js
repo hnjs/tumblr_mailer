@@ -7,15 +7,15 @@ var fs 				= require("fs"),
 
 function createTumblrClient() {
 	return tumblr.createClient({
-		consumer_key	: 'AJwSV6fHk51javlbO1dea93sbmugxc0AZDJADZ7qgLG6lW0uTn',
-		consumer_secret	: 'p2XCoJYyjSrJXpR6o07DPNM0TI441tbqgEazCvG6073Nvmfqyq',
-		token 			: '3YcWAsYK0aU51m0qKaA632BZt88BIARBAG33fEKBhTrgaoxSeB',
-		token_secret	: 'pIHsYa7P3DrLzDOGrssyYWaXP8sQC55K8EMtOaT2MfF3A9kD62'
+		consumer_key	: 'xxxxxxxxx',
+		consumer_secret	: 'xxxxxxxxx',
+		token 			: 'xxxxxxxxx',
+		token_secret	: 'xxxxxxxxx'
 	});
 }
 
 function createMandrillClient() {
-	return new mandrill.Mandrill("PPyuwb3VRNobvKfzoP0NSQ");
+	return new mandrill.Mandrill("xxxxxxxxx");
 }
 
 function csvParse(fileName) {
